@@ -2,7 +2,7 @@
 echo "Enter the MAC address: "
 read MAC
 URL="https://api.macaddress.io/v1?apiKey=$API_KEY&output=json&search=$MAC"
-#URL="https://api.macaddress.io/v1?apiKey=at_jEXuqbLp42U94YIW5y9MD5R6tYVyW&output=json&search=$MAC"
+
 if [ -z $URL ]
 then
   echo "exit"
