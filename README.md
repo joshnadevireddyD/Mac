@@ -23,7 +23,7 @@ Step 3: Writing Bash script to build the Docker image and run the container as w
 
 When you run the script it will prompt user to enter the API Key and MAC Address
 
-                     $bash macaddress.sh
+                     $ ./task.sh
                      Enter The API Key Associated With MACAddress: ######################
                      Enter your MAC Address:  00:0C:29:07:CB:15
 Output: Company Name for MAC Address: 00:0C:29:07:CB:15 is "VMware, Inc" Company Address: 3401 Hillview Avenue Pale Alto CA 94304 US
