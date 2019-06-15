@@ -1,7 +1,10 @@
 #!/bin/bash
+echo "Enter the API Key associated with MAC address: "
+read  API_KEY
 echo "Enter the MAC address: "
 read MAC
-URL="https://api.macaddress.io/v1?apiKey=$API_KEY&output=json&search=$MAC"
+#echo "MAC $MAC $API_KEY"
+URL="https://api.macaddress.io/v1?apiKey=$API_KEY&output=json&se
 
 if [ -z $URL ]
 then
@@ -9,7 +12,8 @@ then
 else
   fetchdata=`curl -s $URL`
 fi
+#echo $fetchdata
 Name=`echo $fetchdata | jq .vendorDetails.companyName`
 echo "Name of the company is: $Name"
 Address=`echo $fetchdata | jq .vendorDetails.companyAddress`
-echo "companyAddress : $Address"
+echo "companyAddress is: $Address"
