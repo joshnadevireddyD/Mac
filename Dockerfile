@@ -10,5 +10,5 @@ WORKDIR /home/macuser
 FROM base
 ENV API_KEY=$API_KEY
 #Copying the script to working directory
-COPY ./sample.sh /home/macuser
-ENTRYPOINT ["./sample.sh"]
+COPY ./mac.sh /home/macuser
+ENTRYPOINT ["./mac.sh"]
