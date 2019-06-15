@@ -1,7 +1,6 @@
 FROM ubuntu:16.04 as base
 RUN apt-get update -y \
 && apt-get install wget curl vim git jq -y
-
 RUN useradd -m macuser
 USER macuser
 #Configuring working directory
